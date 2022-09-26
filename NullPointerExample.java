@@ -4,7 +4,7 @@ public class NullPointerExample
     public static void main(String[] args)
     {
     
-        // Declare our variables
+        // Declare our variables in this section
         
     
         // Initialize realPerson
