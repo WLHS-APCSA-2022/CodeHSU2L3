@@ -6,9 +6,11 @@ public class Person
     // Constructor
     public Person(String theName, int theAge)
     {
-        name = theName;
-        age = theAge;
+        
     }
+    
+    //Default constructor - person with no name or age
+    
     
     
     // Returns a representation of this person
