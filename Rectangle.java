@@ -3,6 +3,8 @@ public class Rectangle
     // Attributes
     private int width;
     private int height;
+    private double dwidth;
+    private double dheight;
     
 
     /*Constructor
@@ -13,7 +15,32 @@ public class Rectangle
         height = rectHeight;
 
     }
+    
+    /* This doesn't work because we already have int, int as 
+     * parameters in another constructor. Variables names +
+     * don't matter, compiler looks at data types.
+     * 
+    public Rectangle(int rectHeight, int rectWidth){
+        width = rectWidth;
+        height = rectHeight;
 
+    }*/
+
+    //this is okay because height is a double now
+    public Rectangle(int rectWidth, double rectHeight){
+        width = rectWidth;
+        dheight = rectHeight;
+
+    }
+    
+    
+    //this is okay because even though it has one double and one int
+    //like the constructor above, order matters
+    public Rectangle(double rectWidth, int rectHeight){
+        dwidth = rectWidth;
+        height = rectHeight;
+
+    }
     /* Constructor
     Allows user to construct a square
     Copies the value of sidelength
@@ -29,6 +56,11 @@ public class Rectangle
     public Rectangle(){
         width = 0;
         height = 0;
+    }
+    
+    public Rectangle(double squareSideLength){
+         dwidth = squareSideLength;
+         dheight = squareSideLength;
     }
 
     // This method lets us print out the object
